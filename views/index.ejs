@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--har line me <%%> karna hai matlab jidhar code udhar ye-->
+    <%for(let i=0;i<messages.length;i++){%>
+        <li>
+        <%=locals.messages[i].text%>
+        
+        <%=locals.messages[i].user%>
+        
+        <%=locals.messages[i].added%>
+        
+        </li>
+    <%}%>
+    <%=locals.messages[0].text%>
+<a href="/new">Enter your message</a>
+</body>
+</html>
